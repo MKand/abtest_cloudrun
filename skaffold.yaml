@@ -1,0 +1,12 @@
+apiVersion: skaffold/v2beta26
+kind: Config
+metadata:
+  name: build_and_deploy
+build:
+  artifacts:
+  - image: gcr.io/cloudrun-demo-385011/cloudrun/abtest
+    context: webpage
+    docker:
+      cacheFrom: 
+      - gcr.io/cloudrun-demo-385011/cloudrun/abtest
+  

@@ -1,0 +1,5 @@
+.* !.gitignore
+tfplan
+.terraform.lock.hcl
+.theia
+*/.terraform/
